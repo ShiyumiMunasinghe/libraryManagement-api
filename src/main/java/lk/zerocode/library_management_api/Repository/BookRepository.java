@@ -1,4 +1,7 @@
 package lk.zerocode.library_management_api.Repository;
 
-public interface BookRepository {
+import lk.zerocode.library_management_api.Model.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface BookRepository extends JpaRepository<Book, Long> {
 }
